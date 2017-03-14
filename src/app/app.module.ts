@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   /* You can think of an NgModule a bit like a package 
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
    * owned by this module. 
    * */
   declarations: [
-    AppComponent
+    AppComponent,
+    ArticleComponent
   ],
   /* You put something in your  imports if 
    * you're going to use it in your templates.

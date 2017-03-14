@@ -1,21 +1,24 @@
 <form class="ui large form segment">
-  <h3 class="ui header">Add a Link</h3>
-  
-  <!--==============================================
-    This form will include template variables for
-    the input title and input link using a hash (#)
-    and variable name (eg) #newTitle.
-  ================================================-->
+    <h3 class="ui header">Add a Link</h3>
+    
+    <!--==============================================
+      This form will include template variables for
+      the input title and input link using a hash (#)
+      and variable name (eg) #newTitle.
+    ================================================-->
 
-  <div class="field">
-    <label for="title">Title:</label>
-    <input name="title" #newTitle>
-  </div>
+    <div class="field">
+      <label for="title">Title:</label>
+      <input name="title" #newTitle>
+    </div>
 
-  <div class="field">
-    <label for="link">Link:</label>
-    <input name="link" #newLink>
-  </div>
+    <div class="field">
+      <label for="link">Link:</label>
+      <input name="link" #newLink>
+    </div>
 
-  <button (click)="addArticle(newTitle, newLink)" class="ui positive rigth floated button">Submit Link</button>
+    <button (click)="addArticle(newTitle, newLink)" 
+              class="ui positive rigth floated button">
+              Submit Link
+    </button>
 </form>

@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  /* NOTES on type syntax: HTMLInpurElement
+  
+  /* NOTES on type syntax: HTMLInputElement
    * =======================================
    * #newtitle and #newLink are now Objects that represent their associated input DOM elements 
    * (specifically, the type is HTMLInputElement). Because they are both Objects now, that means 
