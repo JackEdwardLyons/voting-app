@@ -1,3 +1,41 @@
-<p>
-  article works!
-</p>
+<!-- Votes Element -->
+<div class="four wide column center aligned votes">
+  <div class="ui statistic">
+    <div class="value">
+      {{ votes }}
+    </div>
+    <div class="label">
+      Points
+    </div>
+  </div>
+</div>
+<!-- end Votes Element -->
+
+<!-- Title Card Element -->
+<div class="twelve wide column">
+  <a class="ui large header" href="{{ link }}">
+    {{ title }}
+  </a>
+  <ul class="ui big horizontal list voters">
+
+    <!-- Upvote -->
+    <li class="item">
+      <a href (click)="voteUp()">
+        <i class="arrow up icon"></i>
+        Up Vote
+      </a>
+    </li>
+    <!-- end Upvote -->
+
+    <!-- Downvote -->
+    <li class="item">
+      <a href (click)="voteDown()">
+        <i class="arrow down icon"></i>
+         Down Vote
+      </a>
+    </li>
+    <!-- end Downvote -->
+
+  </ul>
+</div>
+<!-- end Title Card Element -->
