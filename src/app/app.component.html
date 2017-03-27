@@ -23,7 +23,10 @@
     </button>
 </form>
 
+<!-- Loop over each article post within the app.component constructor -->
 <div class="ui grid posts">
-  <app-article>
+  <app-article
+    *ngFor="let post of articles"
+    [article]="post">
   </app-article>
 </div>

@@ -1,4 +1,4 @@
-import { Component, HostBinding, OnInit } from '@angular/core';
+import { Component, HostBinding, OnInit, Input } from '@angular/core';
 import { Article } from '../article/article.model'; 
 
 @Component({
@@ -16,15 +16,11 @@ export class ArticleComponent implements OnInit {
    * ---------------------------------------------------------*/
   @HostBinding('attr.class') cssClass = 'row';
   // Inject the Article model
-  article: Article;
+  @Input() article: Article;
+  
 
   constructor() { 
-    // construct a new Article
-    this.article = new Article(
-      'Angular 2',
-      'http://angular.io',
-      10
-    )
+    // article is populated by the @Input now...
   }
 
 
@@ -45,6 +41,6 @@ export class ArticleComponent implements OnInit {
   }
 
   ngOnInit() {
-  }
+  }  
 
 }
