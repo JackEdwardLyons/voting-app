@@ -6,15 +6,15 @@ import { AppComponent } from './app.component';
 import { ArticleComponent } from './article/article.component';
 
 @NgModule({
-  /* You can think of an NgModule a bit like a package 
-   * and declarations states what components are
+  /* You can think of an NgModule a bit like a package.
+   * Declarations states what components are
    * owned by this module. 
    * */
   declarations: [
     AppComponent,
     ArticleComponent
   ],
-  /* You put something in your  imports if 
+  /* You put something in your imports if 
    * you're going to use it in your templates.
    * */
   imports: [
